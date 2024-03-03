@@ -1,0 +1,65 @@
+.bg-navbar-comntainer{
+    display: grid;
+    grid-template-areas: "logo auto home samples projects";
+    grid-template-columns: 150px auto 70px 150px 150px;
+    column-gap: 30px;
+    background-color: #D92128;;
+    color: white;
+    padding: 10px;
+    list-style: none;
+    width: 100%;
+    div{
+        color: white;
+    }
+    
+}
+.nav-item-logo{
+    text-align: left;
+    // padding: 10px;
+    // height: 50%;
+    cursor: pointer;
+    grid-area: logo;
+    width: fit-content;
+    // grid-column: 1 / 2;
+    img{
+        width: 97px;
+    }
+}
+.nav-item-home {
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+    grid-area: home;
+    width: fit-content;
+
+    // grid-column: 5/6;
+}
+.nav-item-samples {
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+    grid-area: samples;
+    width: fit-content;
+
+    // grid-column: 6/7;
+}
+.nav-item-projects {
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+    grid-area: projects;
+    width: fit-content;
+
+    // grid-column: 7/8;
+}
+
+.nav-item:hover {
+    background-color: #555;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    }
+}

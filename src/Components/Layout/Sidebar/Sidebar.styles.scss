@@ -1,0 +1,33 @@
+.bg-container-sidebar{
+    list-style: none;
+    li{
+        background-color: white;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        button{
+            // border: 1px solid grey;
+            border: none;
+            margin: 10px 0px;
+            width: fit-content;
+            // color: grey;
+            font-size: 16px;
+            font-family: proximaNovaSemiBold;
+            color: rgb(51, 51, 51);
+            width: 100%;
+            
+            }
+       
+    }
+    li:hover{
+       
+            background-color: cyan;
+            color: black;
+            cursor: pointer;
+        
+        
+    }
+}
