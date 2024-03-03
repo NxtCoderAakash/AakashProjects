@@ -12,6 +12,7 @@ import Footer from "./Components/Layout/Footer/Footer";
 // import LayoutWrapping from "./Components/Layout";
 
 const LayoutWrapping = (props) => {
+  
   return (
     <div>
     <div>Layout</div>
