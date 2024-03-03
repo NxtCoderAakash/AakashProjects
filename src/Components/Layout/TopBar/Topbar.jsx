@@ -4,6 +4,8 @@ import KashLogo from "../../../assets/Kash Logo.webp"
 const Topbar = () => {
   return (
       <div className='bg-navbar-comntainer'>
+        <span className='anim-span one'></span>
+        <span className='anim-span two'></span>
         <div class="nav-item nav-item-logo"><img src={KashLogo}/></div>
         <div class="nav-item nav-item-home">Home</div>
         <div class="nav-item nav-item-samples">Work Samples</div>

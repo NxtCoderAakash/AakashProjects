@@ -8,9 +8,53 @@
     padding: 10px;
     list-style: none;
     width: 100%;
+    position: relative;
+    overflow: hidden;
     div{
         color: white;
     }
+    @keyframes twist {
+        0%{
+            // left:100%;
+            // rotate: 180deg;
+            // transform: translateY(300px);
+            left: 0%;
+            
+            
+        }
+        50%{
+            // left:100%;
+            // rotate: 180deg;
+            // transform: translateY(300px);
+            left: 50%;
+        }
+        100%{
+            // rotate: 270deg;
+            // left:50%;
+            // transform: translateY(-900px);
+            left: 100%;
+        }
+    }
+    .anim-span{
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        rotate: -45deg;
+        background-color: white;
+        z-index: 1;
+        top: 20px;
+        box-shadow: 10px 10px 10px grey;
+        opacity: 0.5;
+
+
+    }
+    .one{
+        animation: twist 2.9s ease-in-out 3s infinite;
+    }
+    .two{
+        animation: twist 3s ease-in-out 3s infinite;
+    }
+   
     
 }
 .nav-item-logo{
@@ -24,6 +68,7 @@
     img{
         width: 97px;
     }
+    z-index: 2;
 }
 .nav-item-home {
     text-align: right;
@@ -31,7 +76,7 @@
     cursor: pointer;
     grid-area: home;
     width: fit-content;
-
+    z-index: 2;
     // grid-column: 5/6;
 }
 .nav-item-samples {
@@ -40,7 +85,7 @@
     cursor: pointer;
     grid-area: samples;
     width: fit-content;
-
+    z-index: 2;
     // grid-column: 6/7;
 }
 .nav-item-projects {
@@ -49,13 +94,14 @@
     cursor: pointer;
     grid-area: projects;
     width: fit-content;
-
+    z-index: 2;
     // grid-column: 7/8;
 }
 
 .nav-item:hover {
     background-color: #555;
     color: white;
+   
 }
 
 @media (max-width: 600px) {

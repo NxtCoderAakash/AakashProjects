@@ -8,6 +8,7 @@
         border-radius: 10px;
         padding: 5px;
         text-align: center;
+        cursor: pointer;
         button{
             // border: 1px solid grey;
             border: none;
@@ -20,13 +21,57 @@
             width: 100%;
             
             }
+
+        @keyframes shake {
+            0%{
+                transform: scale(1.1);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+            
+        }
+        
+        animation: shake 1s ease-in-out 3s infinite;
        
     }
+    // li:nth-of-type(2){
+    //     animation: shake 1.5s ease-in-out 3s infinite;
+    // }
+    // li:nth-of-type(3){
+    //     animation: shake 2s ease-in-out 3s infinite;
+    // }
+    // li:nth-of-type(4){
+    //     animation: shake 2.5s ease-in-out 3s infinite;
+    // }
+    // li:nth-of-type(5){
+    //     animation: shake 3s ease-in-out 3s infinite;
+    // }
+    // li:nth-of-type(6){
+    //     animation: shake 3.5s ease-in-out 3s infinite;
+    // }
+    // li:nth-of-type(7){
+    //     animation: shake 4s ease-in-out 3s infinite;
+    // }
+    // li:nth-of-type(8){
+    //     animation: shake 4.5s ease-in-out 3s infinite;
+    // }
+    // li:nth-of-type(9){
+    //     animation: shake 5s ease-in-out 3s infinite;
+    // }
+        
+    
     li:hover{
        
             background-color: cyan;
             color: black;
             cursor: pointer;
+            transform: scale(1.1);
+            animation: none;
+
         
         
     }
