@@ -3,7 +3,7 @@ import PincodeMapping from "../PincodeMapping/index"
 
 const Project1 = () => {
   return (
-    <div><PincodeMapping/></div>
+    <PincodeMapping/>
   )
 }
 

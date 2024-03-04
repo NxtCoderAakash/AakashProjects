@@ -110,7 +110,7 @@ const PincodeMapping=()=>{
         placeholder="Search Pincode"
         icon={SearchIcon}
         // className={styles.widerSearch}
-        className="dropdown-wraper"
+        className="dropdown-wraper mr-3"
         style={{border: "none"}}
       />
     );
@@ -133,7 +133,7 @@ const PincodeMapping=()=>{
                 placeholder="Select City"
                 onCityChange={cityChangeHandler}
                 value={cityFilter}
-                className="dropdown-wraper ml-0"
+                className="dropdown-wraper ml-0 mr-3"
                 manualCityList={pincodeCityList}
             />
             <DropDown
@@ -141,7 +141,7 @@ const PincodeMapping=()=>{
             onChange={onChangeStatusFilter}
             options={statusValues}
             value={statusFilter}
-            className="dropdown-wraper"
+            className="dropdown-wraper mr-3"
             />
            
            { renderSearchField()}

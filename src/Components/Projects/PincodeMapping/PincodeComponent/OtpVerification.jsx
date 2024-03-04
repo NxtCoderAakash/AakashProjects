@@ -10,7 +10,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import { setNotification } from '../../../../redux/actions/notificationAction';
 import { useDispatch } from 'react-redux'
-import { showLoader, hideLoader } from '../../../../redux/actions/'
+import { showLoader, hideLoader } from '../../../../redux/actions/loaderAction'
 import { getOtpPincodeMasterData, postPincodeMasterData, resendOtpPincodeMasterData, updatePincodeMasterData } from '../../../../core/services/logisticsServices';
 // import { getMobile } from '../../../core/services/rbacServices'
 import { getPincodeMasterDataAction } from '../../../../redux/actions/pincodeMasterAction';

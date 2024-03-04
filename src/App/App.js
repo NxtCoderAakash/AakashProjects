@@ -19,6 +19,7 @@ import Project8 from "../Components/Projects/Project8/Project";
 import Project6 from "../Components/Projects/Project6/Project";
 import store from "./store"
 import { Provider } from "react-redux";
+import "../scss/btn.scss"
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/css/bootstrap.css'
 import 'rc-pagination/assets/index.css'

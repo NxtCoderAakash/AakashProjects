@@ -17,11 +17,24 @@
         float: right;
         
       }
-      // .filter-container-main{
-      //   display: flex;
-      //   align-items: center;
-      //   > div{
-      //     display: flex;
-      //   }
-      // }
+      .filter-container-main{
+          padding: 0px;
+      }
+      .flex {
+        display: flex;
+    }
+    .mt-3, .my-3 {
+        margin-top: 1rem !important;
+    }
+    .justify-content-between {
+        justify-content: space-between !important;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
 }

@@ -89,7 +89,7 @@ const PincodeTable = ({ closeLegderModal,showSideBar,handleSideDialog,localPinco
     const renderStatus = (item) => {
         return (
             <>
-                <p className={getClassName(item.value)} ><button name="status" className={`status ${item.value==="ACTIVE"?"":"inactive"}`}>{item.value==="ACTIVE"?"Active":"Inactive"}</button></p>
+                <p style={{padding: "5px 0px"}} ><button name="status" className={`status ${item.value==="ACTIVE"?"":"inactive"}`}>{item.value==="ACTIVE"?"Active":"Inactive"}</button></p>
             </>
         )
     }
@@ -253,6 +253,7 @@ const PincodeTable = ({ closeLegderModal,showSideBar,handleSideDialog,localPinco
                                     }}
                                     className="ag-theme-alpine"
                                 >
+                                    {console.log(localPincodeList,"localpincodeList")}
                                    
                                     <AgGridReact
                                         ref={gridRef}
@@ -280,7 +281,7 @@ const PincodeTable = ({ closeLegderModal,showSideBar,handleSideDialog,localPinco
                                     >
 
                                         <AgGridColumn headerName="">
-                                        <AgGridColumn field="pincodeId" wrapText={true} autoHeight={false} editable={false} headerName='' cellRenderer={renderCheckBox}  width={60}/>
+                                        <AgGridColumn field="pincodeId" wrapText={true} autoHeight={false} editable={false} headerName='' cellRenderer={renderCheckBox} flex={0.5} minWidth={60}/>
                                         <AgGridColumn field="pincode" wrapText={true} autoHeight={false} editable={false} headerName='Pincode' cellRenderer={renderUtrNumber} flex={1.5} onCellClicked={handleSideDialog} minWidth={100}/>
                                         <AgGridColumn field="areaName" wrapText={true} autoHeight={false} editable={false} headerName='Area Name' cellRenderer={renderComments} flex={2} minWidth={100}/>
                                         <AgGridColumn field="cityName" wrapText={true} autoHeight={false} editable={false} headerName='City Name' cellRenderer={renderComments} flex={1.5} minWidth={100}/>

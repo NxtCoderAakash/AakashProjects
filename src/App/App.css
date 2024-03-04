@@ -16,9 +16,9 @@ button{
 }
 *{
   color: rgb(51, 51, 51);
-  font-weight: bold;
+  /* font-weight: bold; */
   
 }
 div{
-  width: 100%;
+  /* width: 100%; */
 }

@@ -1,4 +1,6 @@
 .bg-container-pinMap{
+  width: 100%;
+  padding: 10px;
   .example-wrapper {
     display: flex;
     flex-direction: column;
@@ -64,12 +66,12 @@
 .status{
   width: fit-content;
   // height:  36.08px;
-  padding: 5.54px 16.62px 5.54px 16.62px;
+  // padding: 5.54px 16.62px 5.54px 16.62px;
   border-radius: 8.31px;
   gap: 11.08px;
   background-color: #EBF9E7;
   // font-family: Proxima Nova;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   // text-align: left;
 

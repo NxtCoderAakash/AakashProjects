@@ -1,7 +1,10 @@
+import { pincodeMasterData } from "../constants/apiDataConstants"
+
+
 export function getPincodeMasterData(payload) {
 	return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            resolve({})
+            resolve(pincodeMasterData)
         },2000)
     })
 }
