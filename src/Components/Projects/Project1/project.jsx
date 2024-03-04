@@ -1,8 +1,9 @@
 import React from 'react'
+import PincodeMapping from "../PincodeMapping/index"
 
 const Project1 = () => {
   return (
-    <div>Project1</div>
+    <div><PincodeMapping/></div>
   )
 }
 

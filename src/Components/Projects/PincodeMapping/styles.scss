@@ -1,0 +1,27 @@
+.bg-container-pinMap{
+    .dropdown-wraper {
+        max-width: 210px;
+        min-width: 210px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+    
+        &.mr {
+          margin-right: 10px;
+        }
+      }
+      .add-pincode-button{
+        background-color: #25A4FF;
+        color: white;
+        padding: 8px;
+        float: right;
+        
+      }
+      // .filter-container-main{
+      //   display: flex;
+      //   align-items: center;
+      //   > div{
+      //     display: flex;
+      //   }
+      // }
+}

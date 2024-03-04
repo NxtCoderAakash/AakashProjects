@@ -1,0 +1,310 @@
+.bg-container-pinMap{
+  .example-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  #myGrid {
+    flex: 1 1 0px;
+    width: 100%;
+  }
+  
+  .example-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .ag-header-group-text {
+    white-space: normal !important;
+    letter-spacing: 0.5px !important;
+    // color: #FFFFFF !important;
+}
+.tick-image{
+  height: 23px;
+  width: 23px;
+  cursor: pointer;
+}
+
+.bottomStatus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: grey;
+& .button{
+  // width: 168px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  
+}
+& .cancel{
+  min-width: 168px;
+  color: #E8593B;
+  border: 1px solid #E8593B;
+  // margin-right: 48px;
+}
+& .update{
+  min-width: 168px;
+  background-color: #25A4FF;
+  color:  #FFFFFF;
+
+} 
+& .disabled-b{
+  opacity: 0.5;
+}
+}
+.status{
+  width: fit-content;
+  // height:  36.08px;
+  padding: 5.54px 16.62px 5.54px 16.62px;
+  border-radius: 8.31px;
+  gap: 11.08px;
+  background-color: #EBF9E7;
+  // font-family: Proxima Nova;
+  font-size: 17px;
+  font-weight: 600;
+  // text-align: left;
+
+
+}
+.inactive{
+  background-color: #FFE4DE;
+}
+
+
+  .ag-center-cols-container{
+    & .changed-row{
+      background-color: lightcyan !important; /* Change this to your desired highlight color */
+    }
+  }
+  
+  .highlighted-row{
+    background-color: aqua;
+  }
+ & .bg-time-history{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  > button{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    color: #2E81E4;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    > img{
+      height: 18px;
+      width: 18px;
+      margin-right: 5px;
+      
+    }
+  }
+ }
+}
+.bg-drawer-content{
+  & .add-pincode-heading{
+    text-align: center;
+    margin: 24px;
+    margin-bottom: 0px ;
+  }
+  & .bg-container-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 40px;
+    gap: 16px;
+   
+  }
+  input{
+    width: 225px;
+    height: 36px;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  
+    .button{
+      // width: 168px;
+      height: 36px;
+      padding: 8px;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      // margin-top: 15px;
+    }
+     .cancel{
+      min-width: 168px;
+      color: #E8593B;
+      border: 1px solid #E8593B;
+      // margin-right: 48px;
+    }
+     .update{
+      min-width: 168px;
+      background-color: #25A4FF;
+      color:  #FFFFFF;
+  
+    } 
+
+    .weekday-bg-container{
+      width: 100%;
+      display: grid;
+      grid-template-rows: 90px 90px 90px;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      flex-wrap: wrap;
+      place-items: center;
+
+     
+    }
+    .weekday-card{
+      width: fit-content;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      p:first-of-type{
+        color: black;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      // .item {
+      //   grid-area: 1 / 2 / 2 / 3;
+      // }
+
+    }
+    .status{
+      width: fit-content;
+      // height:  36.08px;
+      padding: 5.54px 16.62px 5.54px 16.62px;
+      border-radius: 8.31px;
+      gap: 11.08px;
+      background-color: #EBF9E7;
+      // font-family: Proxima Nova;
+      font-size: 17px;
+      font-weight: 600;
+      // text-align: left;
+      margin-top: 10px;
+
+
+    }
+    .inactive{
+      background-color: #FFE4DE;
+    }
+    .bg-container-status{
+      padding: 16px;
+      width: 225px;
+      padding-left: 0px;
+    }
+    h4{
+      // font-family: proximaNovaMedium;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+    .weekday-availability-section{
+      // padding: 20px;
+      width: 100%;
+    }
+    .city-drop{
+      width: 225px;
+      margin-top: 10px;
+      height: 37px !important;
+      // & .city-dropdown__control{
+      //   height: 37px !important;
+      // }
+      // & .css-g1d714-ValueContainer{
+      //   height: 37px !important;
+      // }
+      // & .css-1hb7zxy-IndicatorsContainer{
+      // height: 37px !important;
+      // }
+      // & .css-b8ldur-Input{
+      // height: 37px !important;}
+
+      // & .css-1uccc91-singleValue{
+      // // top: 87%;
+      // }
+      & .city-dropdown__input{
+        > input{
+          margin-top: 0px;
+        }
+      }
+      & .city-dropdown__single-value{
+        padding-top: 10px;
+      }
+      & .city-dropdown__placeholder{
+        padding-top: 5px;
+      }
+      // & .css-1wa3eu0-placeholder{
+      // // top: 80%;
+      // height: 100% !important;
+      // }
+      // & .css-1uccc91-singleValue{
+      //   position: static;
+      // }
+      // & .css-1wa3eu0-placeholder {
+      // position: static;
+      // }
+      & .city-dropdown__value-container{
+        // height: 30px ;
+        height: 37px;
+      }
+      // // & .city-dropdown__placeholder{
+      // //   // height: 30px ;
+      // //   height: 30px;
+      // //   padding: 0px;
+      // //   position: static;
+      // // }
+      // & .css-1hb7zxy-IndicatorsContainer{
+      // height: 37px;
+      // }
+      // & .css-yk16xz-control{
+      //   position: static;
+      // }
+      // & .css-g1d714-ValueContainer{
+      //   position: static;
+      // }
+    }
+    
+  }
+  .button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    width: 100%;
+    margin-top: -22px;
+  & .button{
+    // width: 168px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    
+  }
+  & .cancel{
+    min-width: 168px;
+    color: #E8593B;
+    border: 1px solid #E8593B;
+    // margin-right: 48px;
+  }
+  & .update{
+    min-width: 168px;
+    background-color: #25A4FF;
+    color:  #FFFFFF;
+
+  } 
+}

@@ -1,21 +1,30 @@
 // import logo from './logo.svg';
 import {Route,BrowserRouter,Switch} from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.css'
 import './App.css';
-import NotFound from './Components/NotFound/NotFound';
-import Login from './Components/Login/Login/Login';
-import Project1 from './Components/Projects/Project1/project';
-import Project2 from './Components/Projects/Project2/Project';
-import Home from './Components/Home/Home';
-import Sidebar from "./Components/Layout/Sidebar/Sidebar";
-import Topbar from "./Components/Layout/TopBar/Topbar";
-import Footer from "./Components/Layout/Footer/Footer";
-import LayoutWrapping from "./Components/Layout";
-import Project3 from "./Components/Projects/Project3/Project";
-import Project4 from "./Components/Projects/Project4/Project";
-import Project5 from "./Components/Projects/Project5/Project";
-import Project7 from "./Components/Projects/Project7/Project";
-import Project8 from "./Components/Projects/Project8/Project";
-import Project6 from "./Components/Projects/Project6/Project";
+import NotFound from '../Components/NotFound/NotFound';
+import Login from '../Components/Login/Login/Login';
+import Project1 from '../Components/Projects/Project1/project';
+import Project2 from '../Components/Projects/Project2/Project';
+import Home from '../Components/Home/Home';
+import Sidebar from "../Components/Layout/Sidebar/Sidebar";
+import Topbar from "../Components/Layout/TopBar/Topbar";
+import Footer from "../Components/Layout/Footer/Footer";
+import LayoutWrapping from "../Components/Layout";
+import Project3 from "../Components/Projects/Project3/Project";
+import Project4 from "../Components/Projects/Project4/Project";
+import Project5 from "../Components/Projects/Project5/Project";
+import Project7 from "../Components/Projects/Project7/Project";
+import Project8 from "../Components/Projects/Project8/Project";
+import Project6 from "../Components/Projects/Project6/Project";
+import store from "./store"
+import { Provider } from "react-redux";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.css'
+import 'rc-pagination/assets/index.css'
+
+import 'rsuite/dist/styles/rsuite-default.css'
+
 
 // const LayoutWrapping = (props) => {
 
@@ -35,6 +44,9 @@ import Project6 from "./Components/Projects/Project6/Project";
 
 function App() {
   return (
+    <Provider store={store}>
+
+    
   <BrowserRouter>
       <Switch>
         <Route path="/" exact render={() =><LayoutWrapping><Home/></LayoutWrapping>}/>
@@ -51,6 +63,7 @@ function App() {
         <Route component={NotFound}/>
       </Switch>
   </BrowserRouter>
+  </Provider>
   );
 }
 

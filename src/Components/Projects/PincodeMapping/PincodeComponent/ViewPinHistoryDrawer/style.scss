@@ -1,0 +1,121 @@
+.dialogMain {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+    overflow-y:scroll ;
+    overflow-x: auto;
+    height: 70vh;
+    // background-color: red;
+    // height: 600px;
+    // width: 600px;
+}
+
+.infoContainerBox {
+    // background: #FAFAFA;
+    padding: 5px 12px;
+
+    // margin-bottom: 10px;
+
+}
+
+.infoContainerBox div {
+    margin: 10px;
+    // font-weight: 600;
+    font-size: 14px;
+    color: #393939;
+
+}
+
+.infoContainerBox div span {
+    min-width: 150px;
+    display: inline-block;
+
+    // background-color: #4DBD74;
+    &:nth-child(1) {
+        color: gray;
+    }
+}
+
+.exceptionContainer div {
+    font-weight: 400 !important;
+
+    &p{
+       
+    }
+}
+
+.commentsContainer div p{
+    color: #393939;
+}
+
+.dialog-for-rto{
+    // padding: 24px;
+    & .dialog-title-rto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+        & .search-pincode-input{
+            width: 150px;
+        }
+    }
+    & .MuiDrawer-paperAnchorBottom{
+        padding: 24px;
+    }
+}
+.input-container{
+    display: inline-flex;
+    border: 1px solid grey;
+    align-items: center;
+    border-radius: 30px;
+    padding: 3px 30px;
+    width: 550px;
+    height: 52px;
+    
+}
+
+.input-element{
+   border: none;
+   border-radius: 30px;
+   font-size: 16px;
+   width: 100%;
+   font-weight: 500;
+   
+}
+
+.close-button{
+    margin-left: 30px;
+    
+}
+
+.search-pincode-input{
+    height: 34px;
+    font-size: 14px;
+}
+.pin-search-input-container{
+    display: inline-flex;
+    align-items: center;
+    width: 178px;
+    height: 36px;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    
+    > input{
+        border: none;
+        padding: 5px 10px;
+        background-color: #F6F6F6;
+        border-radius: 8px;
+        
+    }
+}
+.date-picker-input{
+    width: 178px;
+    margin-left: 20px;
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    > .rs-picker-toggle{
+        background-color: #F6F6F6 !important;
+        border-radius: 8px !important;
+        border: none !important;
+    }
+}
