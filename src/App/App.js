@@ -13,8 +13,8 @@ import Footer from "../Components/Layout/Footer/Footer";
 import LayoutWrapping from "../Components/Layout";
 import Project3 from "../Components/Projects/Project3/Project";
 import Project4 from "../Components/Projects/Project4/Project";
-import Project5 from "../Components/Projects/Project5/Project";
-import Project7 from "../Components/Projects/Project7/Project";
+// import Project5 from "../Components/Projects/Project5/Project";
+// import Project7 from "../Components/Projects/Project7/Project";
 import Project8 from "../Components/Projects/Project8/Project";
 import Project6 from "../Components/Projects/Project6/Project";
 import store from "./store"
@@ -25,6 +25,9 @@ import "../scss/btn.scss"
 import 'rc-pagination/assets/index.css'
 
 import 'rsuite/dist/styles/rsuite-default.css'
+import MajorProjects from "../Components/Projects/MajorProjects"
+import MinorProjects from "../Components/Projects/MinorProjects";
+import SelfProjectNavigation from "../Components/Projects/SelfProjectNavigation";
 
 
 // const LayoutWrapping = (props) => {
@@ -56,12 +59,13 @@ function App() {
         <Route path="/project2" exact render={() =><LayoutWrapping><Project2/></LayoutWrapping>}/>
         <Route path="/project3" exact render={() =><LayoutWrapping><Project3/></LayoutWrapping>}/>
         <Route path="/project4" exact render={() =><LayoutWrapping><Project4/></LayoutWrapping>}/>
-        <Route path="/project5" exact render={() =><LayoutWrapping><Project5/></LayoutWrapping>}/>
-        <Route path="/project6" exact render={() =><LayoutWrapping><Project6/></LayoutWrapping>}/>
-        <Route path="/project7" exact render={() =><LayoutWrapping><Project7/></LayoutWrapping>}/>
-        <Route path="/project8" exact render={() =><LayoutWrapping><Project8/></LayoutWrapping>}/>
-
-        <Route component={NotFound}/>
+        <Route path="/SelfProjectNavigation" exact render={() =><LayoutWrapping><SelfProjectNavigation/></LayoutWrapping>}/>
+        {/* <Route path="/project6" exact render={() =><LayoutWrapping><Project6/></LayoutWrapping>}/> */}
+        {/* <Route path="/project7" exact render={() =><LayoutWrapping><Project7/></LayoutWrapping>}/> */}
+        {/* <Route path="/project8" exact render={() =><LayoutWrapping><Project8/></LayoutWrapping>}/> */}
+        <Route path="/major" exact render={() =><LayoutWrapping><MajorProjects/></LayoutWrapping>}/>
+        <Route path="/minor" exact render={() =><LayoutWrapping><MinorProjects/></LayoutWrapping>}/>
+        <Route render={() =><LayoutWrapping><NotFound/></LayoutWrapping>}/>
       </Switch>
   </BrowserRouter>
   </Provider>

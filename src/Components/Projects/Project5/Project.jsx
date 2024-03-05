@@ -1,8 +1,9 @@
 import React from 'react'
+import App from "./components/App"
 
 const Project5 = () => {
   return (
-    <div>Project5</div>
+    <div><App/></div>
   )
 }
 

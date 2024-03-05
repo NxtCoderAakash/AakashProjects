@@ -1,0 +1,89 @@
+.bg-container {
+  height: 100vh;
+  background-image: linear-gradient(to right, #defafe, #cffcf1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 800px;
+}
+.timer-image {
+  height: 500px;
+  width: 500px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+.timer-running {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  margin: 0px;
+}
+.play-image {
+  height: 25px;
+  height: 25px;
+}
+.details-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.increase-decrease-timer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.set-timer-display {
+  height: 40px;
+  width: 80px;
+  font-size: 24px;
+  background-color: aqua;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.set-timer-limit {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.play-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+.timer-text {
+  color: aqua;
+}

@@ -1,8 +1,9 @@
 import React from 'react'
+import App from "./App"
 
 const Project6 = () => {
   return (
-    <div>Project6</div>
+    <div><App/></div>
   )
 }
 

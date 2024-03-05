@@ -1,0 +1,34 @@
+.bg-container-project {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "title title title" "descrip video video" "descrip git git";
+    justify-content: space-between;
+    grid-template-columns: 30% auto auto ;
+
+    .card-title {
+        grid-area: title;
+    }
+
+    .card-descrip {
+        grid-area: descrip;
+        ul{
+            font-size: 12px;
+        }
+        ol{
+            font-size: 12px;
+        }
+
+
+    }
+
+    .card-video {
+        grid-area: video;
+    }
+
+    .card-git {
+        grid-area: git;
+    }
+
+}

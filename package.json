@@ -74,6 +74,7 @@
     "react-geocode": "^0.2.3",
     "react-hotjar": "^3.0.1",
     "react-images-viewer": "^1.6.2",
+    "react-loader-spinner": "^4.0.0",
     "react-lottie": "^1.2.3",
     "react-modal-image": "^2.6.0",
     "react-notifications": "^1.7.2",
