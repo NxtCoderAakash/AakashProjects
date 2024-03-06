@@ -44,6 +44,9 @@ const Project2 = () => {
         ></iframe>
       </div>
       <div className="card-git">Project Git Hub Link</div>
+      <a className="card-git-link">Project Git Hub Link</a>
+      <div className="card-live-project">Project Live Link</div>
+      <a className="card-live-project-link" href="https://www.credr.com/ad-demand-leads" target="_blank">Project Live Link</a>
     </div>
   );
 };

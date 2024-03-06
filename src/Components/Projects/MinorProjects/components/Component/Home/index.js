@@ -3,6 +3,8 @@ import './index.css'
 import Loader from 'react-loader-spinner'
 import ProjectCard from '../ProjectCard'
 import NotFound from '../NotFound'
+import getMinorProjectsList from '../../Assets/constants'
+import { withRouter } from 'react-router'
 
 const categoriesList = [
   {id: 'ALL', displayText: 'All'},
@@ -24,6 +26,7 @@ class Home extends Component {
       id: item.id,
       name: item.name,
       imageUrl: item.image_url,
+      link:item.localLink
     }))
     return camelData
   }
@@ -32,14 +35,12 @@ class Home extends Component {
     this.setState({isLoading: 'loading'})
     const {category} = this.state
 
-    const response = await fetch(
-      `https://apis.ccbp.in/ps/projects?category=${category}`,
-    )
+    const response = await getMinorProjectsList()
 
-    if (response.ok) {
-      const jsonData = await response.json()
+    if (response) {
+      // const jsonData = await response.json()
 
-      const formattedData = this.getCamelData(jsonData.projects)
+      const formattedData = this.getCamelData(response.projects)
       console.log(formattedData)
       this.setState({projectList: formattedData, isLoading: 'success'})
     } else {
@@ -50,6 +51,12 @@ class Home extends Component {
   onChangeCategory = event => {
     this.setState({category: event.target.value}, this.getData)
   }
+
+  handleClickIcon=(value)=>{
+    const {history}=this.props
+    history.push(value)
+  }
+
 
   renderLoading = () => (
     <div data-testid="loader" className="loader-container">
@@ -64,7 +71,7 @@ class Home extends Component {
     return (
       <ul className="project-container">
         {projectList.map(item => (
-          <ProjectCard key={item.id} data={item} />
+          <ProjectCard onClickCard={()=>this.handleClickIcon(item.link)} key={item.id} data={item} />
         ))}
       </ul>
     )
@@ -110,4 +117,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default (Home)

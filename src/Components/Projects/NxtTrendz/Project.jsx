@@ -44,7 +44,9 @@ const Nxttrendz = () => {
         ></iframe>
       </div>
       <div className="card-git">Project Git Hub Link</div>
+      <a className="card-git-link" href="https://github.com/NxtCoderAakash/NxtTrendzApp.git" target="_blank">Project Git Hub Link</a>
       <div className="card-live-project">Project Live Link</div>
+      <a className="card-live-project-link" href="https://ReShoppingWeb.ccbp.tech" target="_blank">Project Live Link</a>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import "./styles.scss";
 const Project3 = () => {
   return (
     <div className="bg-container-project">
-      <div className="card-title"><h3>Google Maps Integration</h3></div>
+      <div className="card-title"><h3>Refurbishment Vehicle Dashboard - Spare parts Calculation</h3></div>
       <div className="card-descrip">
         Project Description <br />{" "}
         <ul>
@@ -44,6 +44,9 @@ const Project3 = () => {
         ></iframe>
       </div>
       <div className="card-git">Project Git Hub Link</div>
+      <a className="card-git-link">Project Git Hub Link</a>
+      <div className="card-live-project">Project Live Link</div>
+      <a className="card-live-project-link" >Project Live Link</a>
     </div>
   );
 };

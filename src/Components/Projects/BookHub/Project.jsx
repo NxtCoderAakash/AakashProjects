@@ -45,11 +45,12 @@ const Bookhub = () => {
         ></iframe>
       </div>
       <div className="card-git">Project Git Hub Link</div>
-      <a className="card-git-link">Project Git Hub Link</a>
+      <a className="card-git-link" href="https://github.com/NxtCoderAakash/BookHub.git" target="_blank">Project Git Hub Link</a>
       <div className="card-live-project">Project Live Link</div>
-      <a className="card-live-project-link">Project Live Link</a>
+      <a className="card-live-project-link" href="https://BookHubAakash.ccbp.tech" target="_blank">Project Live Link</a>
     </div>
   );
 };
 
 export default Bookhub;
+// https://github.com/NxtCoderAakash/AakashProjects.git

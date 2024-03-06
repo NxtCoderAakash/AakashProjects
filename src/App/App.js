@@ -32,6 +32,7 @@ import Bookhub from "../Components/Projects/BookHub/Project";
 import Jobby from "../Components/Projects/Jobby/Project";
 import Nxtwatch from "../Components/Projects/NxtWatch/Project";
 import Nxttrendz from "../Components/Projects/NxtTrendz/Project";
+import PincodeMapping from "../Components/Projects/PincodeMapping";
 
 
 // const LayoutWrapping = (props) => {
@@ -73,6 +74,7 @@ function App() {
         <Route path="/nxtwatch" exact render={() =><LayoutWrapping><Nxtwatch/></LayoutWrapping>}/>
         <Route path="/nxttrendz" exact render={() =><LayoutWrapping><Nxttrendz/></LayoutWrapping>}/>
         <Route path="/jobby" exact render={() =><LayoutWrapping><Jobby/></LayoutWrapping>}/>
+        <Route path="/pincodeMapping" exact component={<PincodeMapping/>}/>
         <Route render={() =><LayoutWrapping><NotFound/></LayoutWrapping>}/>
       </Switch>
   </BrowserRouter>

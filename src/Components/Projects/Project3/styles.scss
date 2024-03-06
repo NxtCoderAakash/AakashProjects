@@ -3,10 +3,11 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-areas: "title title title" "descrip video video" "descrip git git";
-    justify-content: space-between;
-    grid-template-columns: 30% auto auto ;
-
+    grid-template-areas: "title title title" "descrip video video" "git git live" "git-link git-link live-link";
+    justify-content: start;
+    grid-template-columns: 42% auto auto ;
+    grid-template-rows: 40px auto 40px 100px;
+    gap: 40px;
     .card-title {
         grid-area: title;
     }
@@ -30,5 +31,13 @@
     .card-git {
         grid-area: git;
     }
-
+    .card-live-project{
+        grid-area: live;
+    }
+    .card-git-link {
+        grid-area: git-link;
+    }
+    .card-live-project-link{
+        grid-area: live-link;
+    }
 }
