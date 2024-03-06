@@ -15,7 +15,7 @@ import Project3 from "../Components/Projects/Project3/Project";
 import Project4 from "../Components/Projects/Project4/Project";
 // import Project5 from "../Components/Projects/Project5/Project";
 // import Project7 from "../Components/Projects/Project7/Project";
-import Project8 from "../Components/Projects/Project8/Project";
+// import Project8 from "../Components/Projects/Project8/Project";
 import Project6 from "../Components/Projects/Project6/Project";
 import store from "./store"
 import { Provider } from "react-redux";
@@ -28,6 +28,10 @@ import 'rsuite/dist/styles/rsuite-default.css'
 import MajorProjects from "../Components/Projects/MajorProjects"
 import MinorProjects from "../Components/Projects/MinorProjects";
 import SelfProjectNavigation from "../Components/Projects/SelfProjectNavigation";
+import Bookhub from "../Components/Projects/BookHub/Project";
+import Jobby from "../Components/Projects/Jobby/Project";
+import Nxtwatch from "../Components/Projects/NxtWatch/Project";
+import Nxttrendz from "../Components/Projects/NxtTrendz/Project";
 
 
 // const LayoutWrapping = (props) => {
@@ -65,6 +69,10 @@ function App() {
         {/* <Route path="/project8" exact render={() =><LayoutWrapping><Project8/></LayoutWrapping>}/> */}
         <Route path="/major" exact render={() =><LayoutWrapping><MajorProjects/></LayoutWrapping>}/>
         <Route path="/minor" exact render={() =><LayoutWrapping><MinorProjects/></LayoutWrapping>}/>
+        <Route path="/bookhub" exact render={() =><LayoutWrapping><Bookhub/></LayoutWrapping>}/>
+        <Route path="/nxtwatch" exact render={() =><LayoutWrapping><Nxtwatch/></LayoutWrapping>}/>
+        <Route path="/nxttrendz" exact render={() =><LayoutWrapping><Nxttrendz/></LayoutWrapping>}/>
+        <Route path="/jobby" exact render={() =><LayoutWrapping><Jobby/></LayoutWrapping>}/>
         <Route render={() =><LayoutWrapping><NotFound/></LayoutWrapping>}/>
       </Switch>
   </BrowserRouter>

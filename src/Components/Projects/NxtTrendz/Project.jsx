@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles.scss";
-const Project3 = () => {
+const Nxttrendz = () => {
   return (
-    <div className="bg-container-project">
-      <div className="card-title"><h3>Google Maps Integration</h3></div>
+    <div className="bg-container-project-nxttrendz">
+      <div className="card-title"><h3>Nxttrendz App (Flipkart and Shopping clone)</h3></div>
       <div className="card-descrip">
         Project Description <br />{" "}
         <ul>
@@ -44,8 +44,9 @@ const Project3 = () => {
         ></iframe>
       </div>
       <div className="card-git">Project Git Hub Link</div>
+      <div className="card-live-project">Project Live Link</div>
     </div>
   );
 };
 
-export default Project3;
+export default Nxttrendz;

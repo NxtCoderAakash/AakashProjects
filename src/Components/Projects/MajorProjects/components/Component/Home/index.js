@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import { withRouter } from 'react-router-dom';
 import './index.css'
 import Loader from 'react-loader-spinner'
 import ProjectCard from '../ProjectCard'
@@ -25,6 +26,7 @@ class Home extends Component {
       id: item.id,
       name: item.name,
       imageUrl: item.image_url,
+      localLink:item.localLink
     }))
     return camelData
   }
@@ -37,7 +39,6 @@ class Home extends Component {
 
     if (response) {
       const formattedData = this.getCamelData(response.projects)
-      console.log(formattedData)
       this.setState({projectList: formattedData, isLoading: 'success'})
     } else {
       this.setState({isLoading: 'failure'})
@@ -46,6 +47,12 @@ class Home extends Component {
 
   onChangeCategory = event => {
     this.setState({category: event.target.value}, this.getData)
+  }
+
+  handleClickProjectCard=(value)=>{
+    const {history}=this.props
+    console.log(value,"value")
+    history.push(value)
   }
 
   renderLoading = () => (
@@ -61,7 +68,7 @@ class Home extends Component {
     return (
       <ul className="project-container">
         {projectList.map(item => (
-          <ProjectCard key={item.id} data={item} />
+          <ProjectCard handleClickProjectCard={this.handleClickProjectCard} key={item.id} data={item} />
         ))}
       </ul>
     )
@@ -107,4 +114,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default withRouter(Home)

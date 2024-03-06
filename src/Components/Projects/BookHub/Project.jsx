@@ -1,11 +1,12 @@
 import React from "react";
 import "./styles.scss";
-const Project3 = () => {
+const Bookhub = () => {
   return (
-    <div className="bg-container-project">
-      <div className="card-title"><h3>Google Maps Integration</h3></div>
+    <div className="bg-container-project-bookhub">
+      <div className="card-title"><h3>BookHub App (Goodreads Clone)</h3></div>
       <div className="card-descrip">
-        Project Description <br />{" "}
+        <p style={{position:"stick"}}>Project Description </p>
+        <br />{" "}
         <ul>
           <li>Developed and launched a responsive web ad platform connecting bike
           sellers with potential buyers, streamlining the process of selling
@@ -44,8 +45,11 @@ const Project3 = () => {
         ></iframe>
       </div>
       <div className="card-git">Project Git Hub Link</div>
+      <a className="card-git-link">Project Git Hub Link</a>
+      <div className="card-live-project">Project Live Link</div>
+      <a className="card-live-project-link">Project Live Link</a>
     </div>
   );
 };
 
-export default Project3;
+export default Bookhub;

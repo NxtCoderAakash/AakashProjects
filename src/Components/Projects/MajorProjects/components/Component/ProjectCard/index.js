@@ -1,10 +1,10 @@
 import './index.css'
 
 const ProjectCard = props => {
-  const {data} = props
+  const {data,handleClickProjectCard} = props
   const {name, imageUrl} = data
   return (
-    <li className="project-card">
+    <li className="project-card" onClick={()=>handleClickProjectCard(data.localLink)}>
       <img src={imageUrl} alt={name} className="project-img" />
       <p>{name}</p>
     </li>
