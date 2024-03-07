@@ -5,18 +5,32 @@
     display: grid;
     grid-template-areas: "title title title" "descrip video video" "git git live" "git-link git-link live-link";
     justify-content: start;
-    grid-template-columns: 42% auto auto ;
-    grid-template-rows: 40px auto 40px 100px;
+    grid-template-columns: 42% auto 50% ;
+    grid-template-rows: 40px auto 40px 40px;
     gap: 40px;
-    @media screen and (max-width:1321px) {
-        grid-template-areas: "title title title" "descrip descrip descrip" "video video video" "git live live" "git-link live-link live-link";
-        grid-template-rows: 40px auto auto 40px 100px;
+
+    @media screen and (max-width:865px) {
+        grid-template-areas: "title title title" "descrip descrip descrip" "video video video" "git auto live" "git-link auto live-link";
+        grid-template-rows: 40px auto auto 40px 40px;
     }
+    .iframe-class{
+        height: 100%;
+        width: 100%;
+        @media screen and (max-width:865px) {
+            width: 80vw;
+            height: 40vw;
+        }
+    }
+
     .card-title {
         grid-area: title;
     }
 
     .card-descrip {
+        @media screen and (min-width:699px) {
+            max-height: 300px;
+            overflow: auto;
+        }
         grid-area: descrip;
         ul{
             font-size: 12px;
@@ -30,18 +44,24 @@
 
     .card-video {
         grid-area: video;
+        text-align: center;
     }
 
     .card-git {
         grid-area: git;
+        text-align: center;
     }
     .card-live-project{
         grid-area: live;
+        text-align: center;
     }
     .card-git-link {
         grid-area: git-link;
+        text-align: center;
     }
     .card-live-project-link{
         grid-area: live-link;
+        text-align: center;
     }
+
 }

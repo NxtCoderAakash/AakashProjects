@@ -5,17 +5,17 @@
     display: grid;
     grid-template-areas: "title title title" "descrip video video" "git git live" "git-link git-link live-link";
     justify-content: start;
-    grid-template-columns: 42% auto auto ;
-    grid-template-rows: 40px auto 40px 100px;
+    grid-template-columns: 42% auto 50% ;
+    grid-template-rows: 40px auto 40px 40px;
     gap: 40px;
 
     @media screen and (max-width:865px) {
-        grid-template-areas: "title title title" "descrip descrip descrip" "video video video" "git live live" "git-link live-link live-link";
-        grid-template-rows: 40px auto auto 40px 100px;
+        grid-template-areas: "title title title" "descrip descrip descrip" "video video video" "git auto live" "git-link auto live-link";
+        grid-template-rows: 40px auto auto 40px 40px;
     }
     .iframe-class{
-        width: 640px;
-        height: 360px;
+        height: 100%;
+        width: 100%;
         @media screen and (max-width:865px) {
             width: 80vw;
             height: 40vw;
@@ -27,6 +27,10 @@
     }
 
     .card-descrip {
+        @media screen and (min-width:699px) {
+            max-height: 300px;
+            overflow: auto;
+        }
         grid-area: descrip;
         ul{
             font-size: 12px;
