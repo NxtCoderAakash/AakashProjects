@@ -1,28 +1,28 @@
 const majorProjects={
     "projects": [
         {
-            "id": "1",
-            "name": "Bookhub (Goodreads Clone)",
-            "image_url": "https://assets.ccbp.in/frontend/react-js/projects-showcase/fruits-counter-img.png",
-            "localLink":"/bookhub",
-        },
-        {
             "id": "2",
-            "name": "Nxt Trendz App(Flipkart,Amazon Clone",
-            "image_url": "https://assets.ccbp.in/frontend/react-js/projects-showcase/gallery-app-img.png",
+            "name": "Nxt Trendz (Shooping App)",
+            "image_url": "https://res.cloudinary.com/dfqs9as0v/image/upload/v1709811498/Nxttrenz_screen_sxmobo.png",
             "localLink":"/nxttrendz"
         },
         {
             "id": "3",
-            "name": "Jobby App(Job Portal)",
-            "image_url": "https://assets.ccbp.in/frontend/react-js/projects-showcase/blogs-list-img.png",
+            "name": "Jobby App (Job Portal)",
+            "image_url": "https://res.cloudinary.com/dfqs9as0v/image/upload/v1709811614/jobby_screenshot_ivpdut.png",
             "localLink":"/jobby"
         },
         {
             "id": "4",
-            "name": "NxtWatch App(Youtube Clone)",
-            "image_url": "https://assets.ccbp.in/frontend/react-js/projects-showcase/emoji-game-img.png",
+            "name": "NxtWatch (Streaming App)",
+            "image_url": "https://res.cloudinary.com/dfqs9as0v/image/upload/v1709811594/nxtWatch_screenshot_nt4xhb.png",
             "localLink":"/nxtwatch"
+        },
+        {
+            "id": "1",
+            "name": "Bookhub (Goodreads Clone)",
+            "image_url": "https://res.cloudinary.com/dfqs9as0v/image/upload/v1709811203/bookhub_screenshot_mi9mg8.png",
+            "localLink":"/bookhub",
         },
     ],
     "total": 4

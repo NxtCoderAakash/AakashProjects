@@ -7,37 +7,22 @@ const Project1 = () => {
       <div className="card-descrip">
         Project Description <br />{" "}
         <ul>
-          <li>Developed and launched a responsive web ad platform connecting bike
-          sellers with potential buyers, streamlining the process of selling
-          bikes online.</li>
-          <li>Leveraged React.js and Material-UI for a modern and
-          user-friendly interface, ensuring a seamless experience across
-          devices.</li>
-          <li>Implemented media queries for optimal responsiveness on
-          various screen sizes Key Features: User-friendly ad creation process
-          Seamless integration of Material-UI for a polished UI/UX Responsive
-          design for optimal viewing on mobile, tablet, and desktop devices</li>
-          <li>Integration with backend APIs for lead generation Utilized React
-          Router for efficient navigation </li>
+          <li>Developed and launched a Pincode Management Dashboard for controlling runner availability in different areas, along with their weekday availability</li>
+          <li>Pincode Management: Comprehensive inclusion of existing and potential pincodes, with user-controlled toggles.</li>
+          <li>Weekday Configuration: Implementation of a dynamic system allowing users to tailor service availability on different days.</li>
+          <li>Integration with backend APIs for availability of existing pincodes and weekdays availability </li>
         </ul>
         <ol>
         Impact:
-        <li>Successfully launched and
-          maintained a user-centric platform, resulting in increased engagement
-          and lead generation.</li>
-        <li> Empowered bike sellers to easily create and
-          manage ads, enhancing the overall user experience.</li>
-        <li> Contributed to the
-          growth of the platform by attracting a diverse user base.</li>
-
-         
+        <li>Operational Flexibility: Efficient pincode management enhances operational adaptability to varying demand patterns.</li>
+        <li> Enhanced User Experience: The dynamic features contribute to an enriched and user-centric experience.</li>
+        <li> Scalability and Adaptability: The platform is meticulously designed to accommodate both existing and potential pincodes, ensuring scalability for evolving service areas and user needs.</li>
         </ol>
       </div>
       <div className="card-video">
         <iframe
-          width="640"
-          height="360"
-          src="https://www.youtube.com/embed/VDcKEpr1Lhc"
+          className="iframe-class"
+          src="https://www.youtube.com/embed/FccvzV89i3Q"
           frameborder="0"
           allowfullscreen
           controls

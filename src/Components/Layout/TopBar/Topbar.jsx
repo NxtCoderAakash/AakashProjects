@@ -14,9 +14,12 @@ const Topbar = () => {
         <span className='anim-span one'></span>
         <span className='anim-span two'></span>
         <div class="nav-item nav-item-logo"><img src={KashLogo}/></div>
-        <div class="nav-item nav-item-home">Home</div>
-        <div class="nav-item nav-item-samples" onClick={()=>onClickWorkSamples("/project1")}>Work Samples</div>
-        <div class="nav-item nav-item-projects" onClick={()=>onClickWorkSamples("/SelfProjectNavigation")}>Github Projects</div>
+        <div className='nav-item-menus'>
+            <button class="nav-item nav-item-home">Home</button>
+            <button class="nav-item nav-item-samples" onClick={()=>onClickWorkSamples("/project1")}>Work Samples</button>
+            <button class="nav-item nav-item-projects" onClick={()=>onClickWorkSamples("/SelfProjectNavigation")}>Github Projects</button>
+        </div>
+        
       </div>
   )
 }

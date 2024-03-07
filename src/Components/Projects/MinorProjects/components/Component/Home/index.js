@@ -4,7 +4,6 @@ import Loader from 'react-loader-spinner'
 import ProjectCard from '../ProjectCard'
 import NotFound from '../NotFound'
 import getMinorProjectsList from '../../Assets/constants'
-import { withRouter } from 'react-router'
 
 const categoriesList = [
   {id: 'ALL', displayText: 'All'},
@@ -16,7 +15,7 @@ const categoriesList = [
 
 class Home extends Component {
   state = {projectList: [], isLoading: 'success', category: 'REACT'}
-
+  
   componentDidMount() {
     this.getData()
   }
@@ -26,7 +25,7 @@ class Home extends Component {
       id: item.id,
       name: item.name,
       imageUrl: item.image_url,
-      link:item.localLink
+      link:item.link
     }))
     return camelData
   }
@@ -54,6 +53,7 @@ class Home extends Component {
 
   handleClickIcon=(value)=>{
     const {history}=this.props
+    // const {history}=window.location
     history.push(value)
   }
 
@@ -71,7 +71,7 @@ class Home extends Component {
     return (
       <ul className="project-container">
         {projectList.map(item => (
-          <ProjectCard onClickCard={()=>this.handleClickIcon(item.link)} key={item.id} data={item} />
+          <a href={item.link} target='_blank'><ProjectCard key={item.id} data={item} /></a>
         ))}
       </ul>
     )

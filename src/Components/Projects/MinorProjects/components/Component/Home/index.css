@@ -1,5 +1,6 @@
 .bg-container-home {
   height: 100%;
+  width: 100%;
 }
 .header-container {
   height: 70px;
@@ -10,7 +11,8 @@
 }
 .project-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;

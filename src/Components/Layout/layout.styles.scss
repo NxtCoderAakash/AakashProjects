@@ -9,8 +9,19 @@
     grid-template-rows: 60px auto 50px;
     gap:2px;
     background-color: white;
-    padding: 2px;
+    padding:0px;
     height: 100vh;
+    width: 100vw;
+
+    @media  screen and (max-width:995px) {
+        grid-template-areas: 
+        "header header header"
+        "menu menu menu"
+        "main main main"
+        "footer footer footer";
+        grid-template-rows: 60px auto auto 50px;
+    ;
+    }
 
 }
 .layout-container{

@@ -26,6 +26,8 @@ import 'rc-pagination/assets/index.css'
 
 import 'rsuite/dist/styles/rsuite-default.css'
 import MajorProjects from "../Components/Projects/MajorProjects"
+// import MinorProjects2 from "../Components/Projects/MinorProjects2"
+
 import MinorProjects from "../Components/Projects/MinorProjects";
 import SelfProjectNavigation from "../Components/Projects/SelfProjectNavigation";
 import Bookhub from "../Components/Projects/BookHub/Project";
@@ -64,7 +66,7 @@ function App() {
         <Route path="/project2" exact render={() =><LayoutWrapping><Project2/></LayoutWrapping>}/>
         <Route path="/project3" exact render={() =><LayoutWrapping><Project3/></LayoutWrapping>}/>
         <Route path="/project4" exact render={() =><LayoutWrapping><Project4/></LayoutWrapping>}/>
-        <Route path="/SelfProjectNavigation" exact render={() =><LayoutWrapping><SelfProjectNavigation/></LayoutWrapping>}/>
+        <Route path="/SelfProjectNavigation" exact render={() =><LayoutWrapping><MajorProjects/></LayoutWrapping>}/>
         {/* <Route path="/project6" exact render={() =><LayoutWrapping><Project6/></LayoutWrapping>}/> */}
         {/* <Route path="/project7" exact render={() =><LayoutWrapping><Project7/></LayoutWrapping>}/> */}
         {/* <Route path="/project8" exact render={() =><LayoutWrapping><Project8/></LayoutWrapping>}/> */}
@@ -74,7 +76,7 @@ function App() {
         <Route path="/nxtwatch" exact render={() =><LayoutWrapping><Nxtwatch/></LayoutWrapping>}/>
         <Route path="/nxttrendz" exact render={() =><LayoutWrapping><Nxttrendz/></LayoutWrapping>}/>
         <Route path="/jobby" exact render={() =><LayoutWrapping><Jobby/></LayoutWrapping>}/>
-        <Route path="/pincodeMapping" exact component={<PincodeMapping/>}/>
+        <Route path="/pincodeMapping" exact component={PincodeMapping}/>
         <Route render={() =><LayoutWrapping><NotFound/></LayoutWrapping>}/>
       </Switch>
   </BrowserRouter>

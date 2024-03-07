@@ -1,12 +1,42 @@
 .project-card {
-  margin-right: 20px;
-  margin-bottom: 20px;
+  /* margin-right: 20px;
+  margin-bottom: 20px; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   cursor: pointer;
+  width: 260px;
+  /* box-shadow: 10px 10px 10px red; */
+  box-shadow: -1px 3px 6px 4px grey;
+  /* min-height: 280px; */
+  @media screen and (max-width:699px) {
+    height: 40vw;
+    width: 35vw;
+    /* margin-right: 10px; */
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  p{
+    text-align: center;
+    margin-top: 5px;
+    @media screen and (max-width:699px) {
+     font-size: 12px;
+    }
+  }
 }
 
 img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border: 1px solid black;
+}
+.project-img{
+  height: 200px;
+  width: 260px;
+  @media screen and (max-width:699px) {
+    height: 100%;
+    width: 100%;
+  }
+
 }

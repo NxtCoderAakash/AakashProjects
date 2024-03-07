@@ -35,8 +35,7 @@ const Project3 = () => {
       </div>
       <div className="card-video">
         <iframe
-          width="640"
-          height="360"
+          className="iframe-class"
           src="https://www.youtube.com/embed/VDcKEpr1Lhc"
           frameborder="0"
           allowfullscreen

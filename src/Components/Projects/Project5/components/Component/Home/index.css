@@ -10,12 +10,13 @@
 }
 .project-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
   list-style: none;
   padding: 0px;
+  gap: 20px;
 }
 .home-card {
   padding: 40px;

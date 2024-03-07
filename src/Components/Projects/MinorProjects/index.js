@@ -5,7 +5,7 @@ import App from './components/App'
 
 const MinorProjects = () => {
   return (
-    <div><App/></div>
+    <App/>
   )
 }
 

@@ -66,11 +66,18 @@ class Home extends Component {
   renderSuccess = () => {
     const {projectList} = this.state
     return (
+    <>
       <ul className="project-container">
         {projectList.map(item => (
           <ProjectCard handleClickProjectCard={this.handleClickProjectCard} key={item.id} data={item} />
         ))}
       </ul>
+      <div className='bg-minor-wrapper'>
+          <div className="bg-container-minor">
+          <p>... Other Minor Projects</p>
+         </div>
+      </div>
+    </>
     )
   }
 

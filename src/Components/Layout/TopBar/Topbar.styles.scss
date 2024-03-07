@@ -1,8 +1,16 @@
 .bg-navbar-comntainer{
     display: grid;
-    grid-template-areas: "logo auto home samples projects";
-    grid-template-columns: 150px auto 70px 150px 150px;
+    grid-template-areas: "logo auto menus";
+    grid-template-columns: 150px auto;
     column-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width:799px) {
+        grid-template-columns: 70px auto;
+        grid-template-areas: "logo menus";
+        column-gap: 10px;
+    }
+    
     background-color: #D92128;;
     color: white;
     padding: 10px;
@@ -36,8 +44,8 @@
         }
     }
     .anim-span{
-        width: 100px;
-        height: 5px;
+        width: 120px;
+        height: 14px;
         position: absolute;
         rotate: -45deg;
         background-color: white;
@@ -70,33 +78,54 @@
 
     }
     z-index: 2;
+    @media screen and (max-width:799px) {
+        img{
+            width: 70px;
+        }
+    }
+}
+.nav-item-menus{
+    grid-area: menus;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
 }
 .nav-item-home {
     text-align: right;
     padding: 10px;
     cursor: pointer;
-    grid-area: home;
+    
     width: fit-content;
     z-index: 2;
     // grid-column: 5/6;
+    @media screen and (max-width:799px) {
+        font-size: 12px;
+    }
 }
 .nav-item-samples {
     text-align: right;
     padding: 10px;
     cursor: pointer;
-    grid-area: samples;
+    // grid-area: samples;
     width: fit-content;
     z-index: 2;
     // grid-column: 6/7;
+    @media screen and (max-width:799px) {
+        font-size: 12px;
+    }
 }
 .nav-item-projects {
     text-align: right;
     padding: 10px;
     cursor: pointer;
-    grid-area: projects;
+    // grid-area: projects;
     width: fit-content;
     z-index: 2;
     // grid-column: 7/8;
+    @media screen and (max-width:799px) {
+        font-size: 12px;
+    }
 }
 
 .nav-item:hover {

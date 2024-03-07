@@ -8,6 +8,10 @@
     grid-template-columns: 42% auto auto ;
     grid-template-rows: 40px auto 40px 100px;
     gap: 40px;
+    @media screen and (max-width:1321px) {
+        grid-template-areas: "title title title" "descrip descrip descrip" "video video video" "git live live" "git-link live-link live-link";
+        grid-template-rows: 40px auto auto 40px 100px;
+    }
 
     .card-title {
         grid-area: title;

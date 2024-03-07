@@ -3,7 +3,7 @@ import "./styles.scss"
 import App from './components/App'
 const MajorProjects = () => {
   return (
-    <div><App/></div>
+    <App/>
   )
 }
 
