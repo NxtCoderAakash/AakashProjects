@@ -7,7 +7,7 @@
     justify-content: start;
     grid-template-columns: 42% auto 50% ;
     grid-template-rows: 40px auto 40px 40px;
-    gap: 40px;
+    gap: 20px 40px;
 
     @media screen and (max-width:865px) {
         grid-template-areas: "title title title" "descrip descrip descrip" "video video video" "git auto live" "git-link auto live-link";
