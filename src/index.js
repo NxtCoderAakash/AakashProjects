@@ -5,6 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import "./index.css"
 
+if (process.env.CI) {
+  // Disable CI mode
+  process.env.CI = false;
+}
 render(
   <App />,
   document.getElementById('root'),
