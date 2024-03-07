@@ -45,6 +45,7 @@ const Bookhub = () => {
       </div>
       <div className="card-video">
         <iframe
+          title="Mockups"
           className="iframe-class"
           src="https://www.youtube.com/embed/5buQb1q2kUo"
           frameborder="0"

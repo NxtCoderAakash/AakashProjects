@@ -54,6 +54,7 @@ const Project3 = () => {
       </div>
       <div className="card-video">
         <iframe
+        title="Mockups"
          className="iframe-class"
           src="https://www.youtube.com/embed/v8jFOTG573E"
           frameborder="0"
@@ -62,9 +63,9 @@ const Project3 = () => {
         ></iframe>
       </div>
       <div className="card-git">Project Git Hub Link</div>
-      <a className="card-git-link">Project Git Hub Link</a>
+      <a href="https://www.google.com" target="_blank" rel="noreferrer"  className="card-git-link">Project Git Hub Link</a>
       <div className="card-live-project">Project Live Link</div>
-      <a className="card-live-project-link">Project Live Link</a>
+      <a href="https://www.google.com" target="_blank" rel="noreferrer"  className="card-live-project-link">Project Live Link</a>
     </div>
   );
 };

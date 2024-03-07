@@ -5,7 +5,7 @@ const initialState = {
   isLoading: false
 }
 
-export default function (state = initialState, action) {
+export default function LoaderReducer (state = initialState, action) {
   switch (action.type) {
     case SHOW_LOADER:
       return getNewState(state, { isLoading: true })

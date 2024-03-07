@@ -50,6 +50,7 @@ const Nxtwatch = () => {
       </div>
       <div className="card-video">
         <iframe
+        title="Mockups"
           className="iframe-class"
           src="https://www.youtube.com/embed/JrXcbAFOC88"
           frameborder="0"

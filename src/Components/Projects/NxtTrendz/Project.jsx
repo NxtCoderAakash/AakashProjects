@@ -51,6 +51,7 @@ const Nxttrendz = () => {
       </div>
       <div className="card-video">
         <iframe
+          title="Mockups"
           className="iframe-class"
           src="https://www.youtube.com/embed/_aY43cTWu0w"
           frameborder="0"

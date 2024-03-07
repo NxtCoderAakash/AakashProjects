@@ -53,6 +53,7 @@ const Jobby = () => {
       </div>
       <div className="card-video">
         <iframe
+          title="Mockups"
           className="iframe-class"
           src="https://www.youtube.com/embed/6_fJpr69_tw"
           frameborder="0"
