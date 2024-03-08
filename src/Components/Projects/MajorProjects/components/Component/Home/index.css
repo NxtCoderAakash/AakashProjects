@@ -38,14 +38,16 @@ select {
   align-items: center;
 }
 .bg-minor-wrapper{
+
+  
   display: flex;
   justify-content: center;
+  
   & .bg-container-minor{
     background-color: rgb(233, 227, 227);
     grid-area: minor;
-
-    width: 200px;
-    padding: 20px;
+    border: none;
+    padding: 10px;
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -53,18 +55,31 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     cursor: pointer;
-    :hover{
-        @keyframes scaleMe {
-            100%{
-                transform: scale(1.2);
-            }
-        }
-        animation: scaleMe 0.1s ease-in-out 0s forwards;
-        
-       }
+    
+    p{
+      margin: 0px;
+    }
+    
   
   }
+  & .bg-container-minor:hover{
+    @keyframes scaleMe {
+        100%{
+            transform: scale(1.2);
+  
+        }
+    }
+    background-color: green;
+    p{
+      color: white;
+    }
+
+    animation: scaleMe 0.1s ease-in-out 0s forwards;
+    
+   }
+  
   
 }
+

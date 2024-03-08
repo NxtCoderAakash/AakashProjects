@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.scss";
+import { GitImage } from "../../../core/utility/iconHelper";
+
 const Nxtwatch = () => {
   return (
     <div className="bg-container-project-nxtwatch">
@@ -64,7 +66,10 @@ const Nxtwatch = () => {
         href="https://github.com/NxtCoderAakash/NxtWatch-App.git"
         target="_blank"
       >
+        <div>
+        <button style={{background:"black",paddin:"5px",marginRight:"10px", borderRadius:"5px",width:"fit-content"}}><img src={GitImage} style={{width:"40px"}}/></button>
         Project Git Hub Link
+        </div>
       </a>
       <div className="card-live-project">Project Live Link</div>
       <a

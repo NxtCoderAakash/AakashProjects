@@ -1,0 +1,26 @@
+.bg-home-container{
+    display: grid;
+    grid-template-areas: "desc lottie";
+
+    @media screen and (max-width:899px ){
+        grid-template-areas: "desc" "lottie";
+    }
+    // grid-template-rows: 100px auto;
+    gap: 30px;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+.desc-card{
+    grid-area: desc;
+    height: 100%;
+    h2{
+        color: red;
+    }
+}
+.lottie-card{
+    grid-area: lottie;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

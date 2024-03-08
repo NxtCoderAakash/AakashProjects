@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.scss";
+import { GitImage } from "../../../core/utility/iconHelper";
 const Project1 = () => {
   return (
     <div className="bg-container-project">
@@ -29,8 +30,18 @@ const Project1 = () => {
           controls
         ></iframe>
       </div>
-      <div className="card-git">Project Git Hub Link</div>
-      <a rel="noreferrer" className="card-git-link" href="https://github.com/NxtCoderAakash/AakashProjects.git" target="_blank">Project Git Hub Link</a>
+      <div className="card-git">
+       
+        Project Git Hub Link
+
+      </div>
+      <a rel="noreferrer" className="card-git-link" href="https://github.com/NxtCoderAakash/AakashProjects.git" target="_blank">
+
+      <div>
+        <button style={{background:"black",paddin:"5px",marginRight:"10px", borderRadius:"5px",width:"fit-content"}}><img src={GitImage} style={{width:"40px"}}/></button>
+        Project Git Hub Link
+        </div>
+      </a>
       <div className="card-live-project">Project Live Link</div>
       <a rel="noreferrer"  className="card-live-project-link" href="http://localhost:3000/pincodeMapping" target="_blank">Project Live Link</a>
     </div>

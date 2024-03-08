@@ -1,7 +1,10 @@
 .footer-conatiner {
     background-color: #414142;
-    padding: 20px 0;
+    // padding: 20px 0;
     // margin-left: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     transition: all 0.3s;
     height: 50px;
@@ -13,5 +16,6 @@
   
     p {
       color: white;
+      margin: 0px;
     }
   }

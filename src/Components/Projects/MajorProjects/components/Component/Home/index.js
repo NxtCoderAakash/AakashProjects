@@ -73,9 +73,9 @@ class Home extends Component {
         ))}
       </ul>
       <div className='bg-minor-wrapper'>
-          <div className="bg-container-minor">
-          <p>... Other Minor Projects</p>
-         </div>
+          <button className="bg-container-minor">
+            <p>... Other Minor Projects</p>
+         </button>
       </div>
     </>
     )

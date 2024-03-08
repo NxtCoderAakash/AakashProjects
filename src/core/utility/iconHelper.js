@@ -7,6 +7,8 @@ import searchIcon from '../../assets/search-icon.svg'
 import searchIconWhite from '../../assets/search-white.svg'
 import searchIconBlack from '../../assets/searchIconBlack.svg'
 import closeIconBlack from "../../assets/close-black.svg"
+import namasteAnimation from "../../assets/HelloAnim.json"
+import gitImage from "../../assets/github.png"
 
 export const SearchIcon=searchIcon
 export const TimeHistoryBlueIcon=timeHistoryBlue
@@ -17,3 +19,5 @@ export const SearchIcon_Black=searchIcon_Black
 export const SearchIconWhite=searchIconWhite
 export const SearchIconBlack=searchIconBlack
 export const CloseIconBlack=closeIconBlack
+export const NamasteAnimation=namasteAnimation
+export const GitImage=gitImage
