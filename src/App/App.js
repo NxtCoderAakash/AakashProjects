@@ -67,9 +67,7 @@ function App() {
         <Route path="/project3" exact render={() =><LayoutWrapping><Project3/></LayoutWrapping>}/>
         <Route path="/project4" exact render={() =><LayoutWrapping><Project4/></LayoutWrapping>}/>
         <Route path="/SelfProjectNavigation" exact render={() =><LayoutWrapping><MajorProjects/></LayoutWrapping>}/>
-        {/* <Route path="/project6" exact render={() =><LayoutWrapping><Project6/></LayoutWrapping>}/> */}
-        {/* <Route path="/project7" exact render={() =><LayoutWrapping><Project7/></LayoutWrapping>}/> */}
-        {/* <Route path="/project8" exact render={() =><LayoutWrapping><Project8/></LayoutWrapping>}/> */}
+
         <Route path="/major" exact render={() =><LayoutWrapping><MajorProjects/></LayoutWrapping>}/>
         <Route path="/minor" exact render={() =><LayoutWrapping><MinorProjects/></LayoutWrapping>}/>
         <Route path="/bookhub" exact render={() =><LayoutWrapping><Bookhub/></LayoutWrapping>}/>
