@@ -35,6 +35,7 @@ import Jobby from "../Components/Projects/Jobby/Project";
 import Nxtwatch from "../Components/Projects/NxtWatch/Project";
 import Nxttrendz from "../Components/Projects/NxtTrendz/Project";
 import PincodeMapping from "../Components/Projects/PincodeMapping";
+import Interview from "../Components/Projects/Interview";
 
 
 // const LayoutWrapping = (props) => {
@@ -75,6 +76,9 @@ function App() {
         <Route path="/nxttrendz" exact render={() =><LayoutWrapping><Nxttrendz/></LayoutWrapping>}/>
         <Route path="/jobby" exact render={() =><LayoutWrapping><Jobby/></LayoutWrapping>}/>
         <Route path="/pincodeMapping" exact component={PincodeMapping}/>
+        <Route path="/interview" exact component={Interview}/>
+        <Route path="/interview1" exact component={Interview}/>
+        <Route path="/interview2" exact component={Interview}/>
         <Route render={() =><LayoutWrapping><NotFound/></LayoutWrapping>}/>
       </Switch>
   </BrowserRouter>
